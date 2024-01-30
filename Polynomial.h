@@ -144,7 +144,7 @@ Polynomial<T> Polynomial<T>::operator*(const Polynomial<T>& other) const
 
 template<typename T>
 void Polynomial<T>::normalize() {
-	std::map<int, T, std::greater<>> termMap;
+	std::map<int, T, std::greater<>> termMap;	// 按照指数降序排列
 	for (const auto& term : terms) {
 		termMap[term.exponent] += term.coefficient;
 	}

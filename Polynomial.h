@@ -61,7 +61,7 @@ T Polynomial<T>::evaluate(T x)
 }
 
 template<typename T>
-inline void Polynomial<T>::printTerm(const Node<T>& term)
+void Polynomial<T>::printTerm(const Node<T>& term)
 {
 	if (term.exponent == 0) {
 		std::cout << term.coefficient;
